@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Todo List</title>
+</head>
+
+<body onload="loadImg()">
+        <div class="card">
+                <img id="firstImg" src="https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" style="width:24rem">
+            
+                <div class="container">
+                  <h4><b>MyDay</b></h4> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus erat, condimentum sit amet venenatis sit amet, fringilla sit amet ex. Nulla feugiat ligula vel risus pellentesque, id vestibulum tellus vestibulum.</p> 
+                  <hr>
+                    <div>
+                        <ul id="groupList" > 
+                            <li class="list-group-item"><input  type="checkbox"  class="inputBox">Cras justo odio  </li>
+                            <li class="list-group-item"><input  type="checkbox"  class="inputBox">Dapibus ac facilisis in </li>
+                            <li class="list-group-item"><input  type="checkbox"  class="inputBox">Vestibulum at eros </li>
+                            <li class="list-group-item"><input  type="checkbox"  class="inputBox">Vestibulum at eros </li>
+                        </ul>
+                    </div>
+                    <button id="add">+Add</button>
+                    <form id="form">
+                        <label>New Task: </label><input type="text" name="addNewItem" id="addNewItem"> 
+                        <label>Category: </label>
+                            <select>
+                                <option value="MyDay">MyDay</option>
+                                <option value="Important">Important</option>
+                            </select>   
+                        <button id="submit" type="submit">Submit</button> 
+                        <button id="cancelSubmit">Cancel</button>
+                    </form> 
+                </div>
+              </div>
+            </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="script.js"></script>
+
+     
+</body>
+</html>

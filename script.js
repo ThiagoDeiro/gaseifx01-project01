@@ -45,30 +45,6 @@ $(document).ready(function(){
     displayList(list);
   });
 
-
-
-  // $("#submit").click(function(event){
-  //   event.preventDefault();
-  //   var text = $("#addNewItem").val();
-  //   var inputResult = "<li class = list-group-item><input type = checkbox class = inputBox>" + text + "</li>";
-  //   if( text && counter <= 6){
-  //     $("#groupList").append(inputResult);
-  //     $("#form").hide("slow");
-  //     $("#groupList").show("slow");
-  //     counter++;
-  //   } 
-  // else{
-  //   alert("Input field must be filled");
-  //   } 
-  // });
-  // event add event inside the function to avoid problems 
-  // $('ul').on('click', "input" , function(event){
-  //   $(this).parent().fadeOut(500, function(){
-  //     $(this).remove();
-  //   })
-  // event.stopPropagation();
-  // })
-
   $("#cancelSubmit").click(function(problem){
     problem.preventDefault();
     $("#form").slideUp(1000);

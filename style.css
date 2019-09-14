@@ -16,11 +16,6 @@ body{
     .card {
       margin-top: 0;
       height: auto;
-      width: auto;
-    }
-    img{
-      height: auto;
-      width: auto;
     }
   }
   
@@ -47,7 +42,7 @@ body{
 
   .btn{
       font-size: 17px;
-      background-color:#120413;;
+      background-color: #020607;
       border: none;
       color: white;
       padding: 8px 10px;

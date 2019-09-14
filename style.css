@@ -8,7 +8,14 @@ body{
     transition: 0.3s;
     width: 24rem;
     margin: 0 auto;
+    margin-top: 100px;
+  
   }
+  /* @media only screen and (max-width: 600px) {
+    .card {
+      margin-top: 20px;
+    }
+  } */
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -16,6 +23,7 @@ body{
   
   .container {
     padding: 2px 16px;
+    flex-direction: column;
   }
   #groupList{
       padding: 0 ;

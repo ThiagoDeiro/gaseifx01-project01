@@ -25,7 +25,7 @@ $(document).ready(function(){
   function displayList(array){
         $('#groupList').text('');
     for(i in array){
-        $('#groupList').append(`<li class = list-group-item><i class="far fa-trash-alt trash" id="${i}"></i> ${list[i]} </li>`);
+        $('#groupList').append(`<li class = list-group-item><button><i class="far fa-trash-alt trash" id="${i}"></i></button> ${list[i]} </li>`);
     }
   }
 
@@ -36,19 +36,13 @@ $(document).ready(function(){
       var input = document.getElementById("addNewItem").value;
       list.push(input);
       displayList(list);
-      console.log(list);
   
   })
 
 
   $(document).on('click', ".trash", function(){
-    console.log("hello");
-    
     delete list[this.id];
     displayList(list);
-    // console.log()
-    
-    
   });
 
 

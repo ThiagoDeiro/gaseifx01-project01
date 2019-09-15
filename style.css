@@ -29,8 +29,8 @@ h2{
   }
   @media only screen {
     .card {
-      margin-top: 0;
-      height: auto;
+      width: 370px;
+      height: 812px;
     }
   }
   

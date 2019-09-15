@@ -1,19 +1,31 @@
+ 
+ document.body.onload = loadImg();
+  n =  new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  document.getElementById("date").innerHTML =  m + "/" + d + "/" + y;
+ 
  function loadImg(){
   var pic = document.getElementById("firstImg");
   var date = new Date();
   var hour = date.getHours();
-  // var hour = 20;
+  //var hour = 20;
   if(hour >= 0 && hour < 12){
-    pic.src = "https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+    pic.src = "images/landscape-1844229_1280.png";
+    $(".card").css("background-color", "rgb(89, 128, 48)");
   }else if( hour >= 12 && hour < 18){
-    pic.src = "https://images.pexels.com/photos/1813392/pexels-photo-1813392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+    pic.src = "images/landscape-1844226_1280.png";
+    $(".card").css("background-color", "rgb(11, 48, 80)");
   }else{
-    pic.src = "https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+    pic.src = "images/landscape-1844231_1280.png";
+    $(".card").css("background-color", "rgb(15, 21, 32)");
   }
 }
 
-let counter = 0;
+
 let list =[];
+
 $(document).ready(function(){
   $("#form").hide();
   $("#add").click(function(){
@@ -23,9 +35,14 @@ $(document).ready(function(){
   });
 
   function displayList(array){
-        $('#groupList').text('');
-    for(i in array){
-        $('#groupList').append(`<li class = list-group-item><button><i class="far fa-trash-alt trash" id="${i}"></i></button> ${list[i]} </li>`);
+    $('#groupList').text('');
+    for(let i in array){
+      const insertNewData = `<li class = list-group-item>
+        <button><i class="far fa-trash-alt trash" id="${list[i].id}"></i>
+        </button> ${list[i].name} 
+        </li>
+        <hr>`;
+      $('#groupList').append(insertNewData);
     }
   }
 
@@ -34,20 +51,31 @@ $(document).ready(function(){
   $("#submit").click(function(event){
     event.preventDefault();
       var input = document.getElementById("addNewItem").value;
-      list.push(input);
+      list.push({
+        id :'task_' + Date.now(),
+        name : input,
+        // isDone : false
+      });
       displayList(list);
+      $("#addNewItem").val(''); // clear input field after submit.
   
   })
 
 
   $(document).on('click', ".trash", function(){
-    delete list[this.id];
+    let idToDelete = this.id;
+    list = list.filter(function(obj){
+      return obj.id !== idToDelete;
+      
+    })
     displayList(list);
   });
 
   $("#cancelSubmit").click(function(problem){
     problem.preventDefault();
     $("#form").slideUp(1000);
+    $("#addNewItem").val('');// clear input field after cancel.
+
   });
    
 })

@@ -5,37 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <title>My Todo List</title>
 </head>
 
-<body onload="loadImg()">
+<body >
         <div class="card">
-                <img id="firstImg" src="https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" style="width:24rem">
-            
-                <div class="container">
-                  <h4><b>MyDay</b></h4> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus erat, condimentum sit amet venenatis sit amet, fringilla sit amet ex. Nulla feugiat ligula vel risus pellentesque, id vestibulum tellus vestibulum.</p> 
-                  <hr>
+
+                <img id="firstImg" src="images/landscape-1844229_1280.png" alt="" style="width:24rem" style="position: relative">
+                <div id="textAboveImg">
+                    <h2><span>ToDo List</span></h2>
+                    <h2 id="date"></h2>
+                </div>
+                <div class="container" >
                     <div>
                         <ul id="groupList" ></ul>
                     </div>
-                    <div style="flex-grow: 1;"></div>
-                    <button id="add" class="btn">+Add</button>
-                    <form id="form">
-                        <label>New Task: </label><input type="text" name="addNewItem" id="addNewItem"> 
-                        <label>Category: </label>
-                            <!-- <select>
-                                <option value="MyDay">MyDay</option>
-                                <option value="Important">Important</option>
-                            </select>    -->
-                        <button id="submit" type="submit" class="btn">Submit</button> 
-                        <button id="cancelSubmit" class="btn">Cancel</button>
-                    </form> 
+                    <div id="pushButton">
+                        <button id="add" class="btn">+Add</button>
+                        <form id="form">
+                            <label>New Task: </label><input type="text" name="addNewItem" id="addNewItem"> 
+                            <button id="submit" type="submit" class="btn">Submit</button> 
+                            <button id="cancelSubmit" class="btn">Cancel</button>
+                        </form> 
+                    </div>
                 </div>
               </div>
             </div>

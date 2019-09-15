@@ -1,27 +1,42 @@
 body{
     margin: 0 auto;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
+   
 }
 
+h2{
+  color:white;
+  text-shadow: 2px 2.5px black;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+  ul{
+    height: 380px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+  }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     transition: 0.3s;
     width: 24rem;
     margin: 0 auto;
     margin-top: 100px;
+    background-color: rgb(11, 48, 80);
     
   
   }
-  @media only screen {
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) { 
+
     .card {
-      margin-top: 0;
-      height: auto;
+      width: 300px;
     }
   }
   
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
   
   .container {
     padding: 2px 16px;
@@ -33,11 +48,18 @@ body{
 
   li{
         list-style-type: none;
-        box-shadow: 0 8px 16px 0 rgba(148, 148, 148, 0.2);
         width: 20rem;
         border: 1px  grey;
-        padding: 20px;
+        padding: 5px;
+        margin-top: 5px;
 
+  }
+
+  hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .btn{
@@ -70,5 +92,18 @@ body{
      text-align: center;
   }
 
+  #textAboveImg{
+    position: absolute; 
+    top: 155px; 
+    left: auto; 
+    width: 100%; 
+    margin-left: 10px
+  }
+
+  #date{
+    font-size: 16px;
+    max-width: 100%;
+    max-height: 40px;
+  }
   
 

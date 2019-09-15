@@ -12,7 +12,7 @@ h2{
 
 }
   ul{
-    height: 380px;
+    height: 350px;
     overflow: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -101,6 +101,10 @@ h2{
     font-size: 16px;
     max-width: 100%;
     max-height: 40px;
+  }
+
+  form{
+    position: relative;
   }
   
 

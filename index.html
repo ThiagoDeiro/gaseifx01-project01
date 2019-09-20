@@ -14,24 +14,24 @@
 
 <body>
     <div class="card">
-        <img id="firstImg" src="images/landscape-1844226_1280.png" alt="" style="width:100%" style="position: relative">
+          <img id="firstImg" src="images/landscape-1844226_1280.png" alt="" class="image">
         
         <div id="textAboveImg">
-            <h2><span>ToDo List</span></h2>
+            <h1><span>ToDo List</span></h1>
             <h2 id="date"></h2>
         </div>
         
         <div class="container">
-                <ul id="groupList"></ul>
+            <ul id="groupList"></ul>
          </div>
-            <div id="pushButton">
-                <button id="add" class="btn">+Add</button>
-                <form id="form">
-                    <label style="color: white;">New Task: </label><input type="text" name="addNewItem" id="addNewItem">
-                    <button id="submit" type="submit" class="btn">Submit</button>
-                    <button id="cancelSubmit" class="btn">Cancel</button>
-                </form>
+        <div id="pushButton" class="divbuttons">
+            <button id="add" class="btnadd"><i class="fas fa-plus"></i></button>
+            <div id="form">
+                <label class="newtasklabel">New Task:  </label><input type="text" class="newtaskinput" name="addNewItem" id="addNewItem">
+                <button id="submit" type="submit" class="btn"><i class="fas fa-check"></i></button>
+                <button id="cancelSubmit" class="btn"><i class="fas fa-times"></i></button>
             </div>
+        </div>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

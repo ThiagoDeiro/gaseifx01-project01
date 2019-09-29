@@ -44,9 +44,9 @@
 
    5. Screenshots  
 
-- ![Screenshot1](/screenshot/screenshot1.png)
-- ![Screenshot2](/screenshot/screenshot2.png)
-- ![Screenshot3](/screenshot/screenshot3.png)
+ ![Screenshot1](/screenshot/screenshot1.png)
+ ![Screenshot2](/screenshot/screenshot2.png)
+ ![Screenshot3](/screenshot/screenshot3.png)
 
 
 ------------------------------------  

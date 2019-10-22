@@ -90,14 +90,12 @@ $(document).on('click', ".trash", function(){
 });
   
 //cancel input
-
 $("#cancelSubmit").click(function(problem){
   problem.preventDefault();
   $("#form").slideUp(1000);
   $("#addNewItem").val('');// clear input field after cancel.
   document.getElementById("add").style.visibility = "visible";
 });
-
 //display tasklist
 
 function displayList(array){

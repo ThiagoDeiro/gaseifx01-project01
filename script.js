@@ -21,7 +21,7 @@
     var pic = document.getElementById("firstImg");
     var date = new Date();
     var hour = date.getHours();
-    var hour = 20;
+    // var hour = 20;
       if(hour >= 0 && hour < 18){ 
         pic.src = "images/landscape-1844226_1280.png";
         $(".card").css("background-color", "rgb(11, 48, 80)");

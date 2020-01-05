@@ -123,9 +123,7 @@ function displayList(array){
 }
    
 }
-// ToDo
-// created a edit function, tu uptade tasks.
-// add local storage, so I can save tasks.
+
 
 
  

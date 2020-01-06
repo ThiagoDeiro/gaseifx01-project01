@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;;
-    background-color: lightgray;  
+    background-color: #190014;  
 }
 
 .image{
@@ -36,11 +36,13 @@ ul{
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  border: 1px solid white;
+  box-shadow: 3px 3px 30px 0 rgba(255, 255, 255); 
   transition: 0.3s;
   width: 24rem;
   background-color: rgb(11, 48, 80);
-  margin: auto;    
+  margin: auto; 
+  margin-top: 100px;   
 }
   
 .container {

@@ -34,7 +34,7 @@
 let taksList =[];
 let counter = 0;
 
-// body animations 
+
 
 $(document).ready(function(){
   $("#form").hide();

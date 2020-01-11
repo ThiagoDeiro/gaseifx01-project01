@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 displayList(taksList);  
 
-//add new task
+
 
 $("#submit").click(function(event){
   event.preventDefault();
@@ -70,16 +70,16 @@ $("#submit").click(function(event){
     $(this).prop('checked'); 
     })
     displayList(taksList);
-    $("#addNewItem").val(''); // clear add input field after submit.
+    $("#addNewItem").val('');
 })
 
-//edit button animation
+
 
 $(document).on('click', '.editTask', function(){
   $('.editNewTask').show();
 })
 
-//deleting task
+
 
 $(document).on('click', ".trash", function(){
   let idToDelete = this.id;
@@ -89,14 +89,14 @@ $(document).on('click', ".trash", function(){
   displayList(taksList);           
 });
   
-//cancel input
+
 $("#cancelSubmit").click(function(problem){
   problem.preventDefault();
   $("#form").slideUp(1000);
-  $("#addNewItem").val('');// clear input field after cancel.
+  $("#addNewItem").val('');
   document.getElementById("add").style.visibility = "visible";
 });
-//display tasklist
+
 
 function displayList(array){
   $('#groupList').text('');

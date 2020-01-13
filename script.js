@@ -15,7 +15,6 @@
   d = n.getDate();
   document.getElementById("date").innerHTML =  weekday + " " +  d + "/" + m + "/" + y;
  
-  // function to update the image background!
   
   function loadImg(){
     var pic = document.getElementById("firstImg");
